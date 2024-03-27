@@ -26,6 +26,7 @@ const ShipmentList = ({ shipments }) => {
             <h4>Ordine Numero: {shipment.orderNumber}</h4>
             <p>Da Pagare: ${shipment.amountPayment}</p>
             <p>Scadenza Pagamento: {shipment.dueDate}</p>
+            <p>Fornitore: {shipment.supplier.label}</p>
           </div>
           {/* <Link to={`/shipments/${shipment.id}`}>
             <button className="btn">View</button>

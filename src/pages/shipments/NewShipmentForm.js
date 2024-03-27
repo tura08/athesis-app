@@ -9,7 +9,7 @@ const suppliers = [
   { value: "proactive", label: "Proactive Health" },
 ];
 
-const shipmentStatus = [
+const shipmentsStatus = [
   { value: "aperte", label: "Aperta" },
   { value: "chiuse", label: "Chiusa" },
   { value: "partite", label: "Partita" },
@@ -23,7 +23,7 @@ const NewShipmentForm = ({ toggleModal }) => {
   const [amountPayment, setAmountPayment] = useState("");
   const [invoiceDetails, setInvoiceDetails] = useState("");
   const [dueDate, setDueDate] = useState("");
-  const [orderStatus, setOrderStatus] = useState("");
+  const [shipmentStatus, setShipmentStatus] = useState("");
   const [formError, setFormError] = useState(null);
 
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const NewShipmentForm = ({ toggleModal }) => {
       setFormError("Please select a supplier");
       return;
     }
-    if (!orderStatus.value) {
+    if (!shipmentStatus.value) {
       setFormError("Please select a status for the order");
       return;
     }
@@ -46,7 +46,7 @@ const NewShipmentForm = ({ toggleModal }) => {
       amountPayment,
       invoiceDetails,
       dueDate,
-      orderStatus,
+      shipmentStatus,
     };
     addDocument(shipmentDetails);
     if (!response.error) {
@@ -57,7 +57,6 @@ const NewShipmentForm = ({ toggleModal }) => {
 
   return (
     <div className="new-shipment">
-      <h2 className="page-title">Lista spedizioni</h2>
       <form onSubmit={handleSubmit}>
         <label>
           <span>Numero Ordine</span>
@@ -105,8 +104,8 @@ const NewShipmentForm = ({ toggleModal }) => {
         <label>
           <span>Stato spedizione</span>
           <Select
-            onChange={(option) => setOrderStatus(option)}
-            options={shipmentStatus}
+            onChange={(option) => setShipmentStatus(option)}
+            options={shipmentsStatus}
           />
         </label>
         <button className="btn">Aggiungi spedizione</button>

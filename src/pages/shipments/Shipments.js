@@ -29,8 +29,8 @@ const Shipments = () => {
         case "partite":
         case "dogana":
         case "concluse":
-          console.log(shipment.orderStatus.value, currentFilter);
-          return shipment.orderStatus.value === currentFilter;
+          console.log(shipment.shipmentStatus.value, currentFilter);
+          return shipment.shipmentStatus.value === currentFilter;
         default:
           return true;
       }

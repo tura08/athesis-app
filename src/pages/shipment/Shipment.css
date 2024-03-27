@@ -1,0 +1,29 @@
+/* .shipment-order {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  background-color: #fff;
+  padding: 10px;
+} */
+
+.shipment-order {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+}
+
+.shipment-order form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.shipment-order label {
+  margin: 0;
+}
+
+.shipment-order label span {
+  color: var(--text-color);
+  font-size: 0.9em;
+}

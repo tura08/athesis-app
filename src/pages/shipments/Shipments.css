@@ -5,14 +5,7 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 20px;
 }
-.shipment-card {
-  background-color: #fff;
-  padding: 16px;
-  border-radius: 6px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
-  text-decoration: none;
-  color: inherit;
-}
+
 .shipment-list h4 {
   font-size: 0.9em;
   color: var(--heading-color);
@@ -51,6 +44,14 @@
 .shipment-list .delete:hover {
   color: pink;
   background-color: red;
+}
+.shipment-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
 }
 .shipment-card-details {
   margin-bottom: 20px;
