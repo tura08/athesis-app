@@ -1,0 +1,109 @@
+.shipment-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+.shipment-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+}
+.shipment-list h4 {
+  font-size: 0.9em;
+  color: var(--heading-color);
+}
+.shipment-list p {
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+.shipment-list .assigned-to {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+.shipment-list ul {
+  margin: 10px 0;
+  display: flex;
+}
+.shipment-list li {
+  margin-right: 10px;
+}
+.shipment-list .avatar {
+  width: 30px;
+  height: 30px;
+}
+.shipment-list .delete {
+  background: pink;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: red;
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid red;
+}
+
+.shipment-list .delete:hover {
+  color: pink;
+  background-color: red;
+}
+.shipment-card-details {
+  margin-bottom: 20px;
+}
+
+.new-shipment {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+}
+
+.new-shipment form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.new-shipment label {
+  margin: 0;
+}
+
+.new-shipment label span {
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+.shipment-filter {
+  margin: 10px auto;
+}
+.shipment-filter nav {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.shipment-filter p {
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+.shipment-filter button {
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--text-color);
+  cursor: pointer;
+  border-right: 1px solid #e4e4e4;
+  font-size: 0.9em;
+}
+.shipment-filter button:last-child {
+  border: 0;
+}
+.shipment-filter button.active {
+  color: var(--primary-color);
+}
