@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 
 import { useFirestore } from "../../hooks/useFirestore";
 
@@ -19,7 +18,7 @@ const ShipmentList = ({ shipments }) => {
 
   return (
     <div className="shipment-list">
-      {shipments.length === 0 && <p>No shipments yet!</p>}
+      {shipments.length === 0 && <p>Nessuna spedizione.</p>}
       {shipments.map((shipment) => (
         <div className="shipment-card" key={shipment.id}>
           <div className="shipment-card-details">
@@ -28,9 +27,6 @@ const ShipmentList = ({ shipments }) => {
             <p>Scadenza Pagamento: {shipment.dueDate}</p>
             <p>Fornitore: {shipment.supplier.label}</p>
           </div>
-          {/* <Link to={`/shipments/${shipment.id}`}>
-            <button className="btn">View</button>
-          </Link> */}
           <button
             className="btn"
             onClick={() => openModalForShipment(shipment)}

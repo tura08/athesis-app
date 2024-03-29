@@ -1,11 +1,3 @@
-/* .shipment-order {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  background-color: #fff;
-  padding: 10px;
-} */
-
 .shipment-order {
   max-width: 600px;
   margin: 20px auto;

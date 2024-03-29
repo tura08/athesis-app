@@ -1,9 +1,8 @@
 import { useCollection } from "../../hooks/useCollection";
 import Modal from "../../components/Modal";
-import NewShipmentForm from "./NewShipmentForm";
 import ShipmentList from "./ShipmentList";
 import ShipmentFilter from "./ShipmentFilter";
-
+import Shipment from "../shipment/Shipment";
 import "./Shipments.css";
 import { useState } from "react";
 
@@ -53,7 +52,7 @@ const Shipments = () => {
         +
       </button>
       <Modal isOpen={isModalOpen} onClose={toggleModal}>
-        <NewShipmentForm toggleModal={toggleModal} />
+        <Shipment toggleModal={toggleModal} />
       </Modal>
     </div>
   );

@@ -9,10 +9,9 @@ import Signup from "./pages/signup/Signup";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Shipments from "./pages/shipments/Shipments";
-import Shipment from "./pages/shipment/Shipment";
 import ToDo from "./pages/todo/ToDo";
 
-function App() {
+const App = () => {
   const { user, authIsReady } = useAuthContext();
   return (
     <div className="App">
@@ -33,10 +32,6 @@ function App() {
                 element={
                   user ? <Shipments /> : <Navigate to="/login" replace />
                 }
-              />
-              <Route
-                path="/shipments/:id"
-                element={user ? <Shipment /> : <Navigate to="/login" replace />}
               />
               <Route
                 path="/todo"
@@ -60,6 +55,6 @@ function App() {
       )}
     </div>
   );
-}
+};
 
 export default App;

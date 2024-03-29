@@ -72,7 +72,7 @@ textarea {
   outline: none;
 }
 textarea {
-  min-height: 160px;
+  min-height: 130px;
 }
 .error {
   color: red;

@@ -108,6 +108,7 @@ export const useFirestore = (collectionName) => {
         payload: { id, updates },
       });
     } catch (err) {
+      console.log(err);
       dispatch({ type: "ERROR", payload: err.message });
     }
   };

@@ -1,0 +1,83 @@
+/* Adjust the form table layout */
+.todo form table,
+.todo-list table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.todo form table td {
+  vertical-align: top;
+  padding: 3px;
+}
+
+.todo form label {
+  margin-bottom: 4px;
+  display: block;
+}
+
+.todo form .btn {
+  margin-top: 3px;
+}
+
+.todo form input,
+.todo form select {
+  width: 100%;
+  margin-top: 3px;
+}
+
+.todo form td:last-child {
+  white-space: nowrap;
+  width: 1%;
+}
+.todo select {
+  padding: 8px 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+.todo-list {
+  margin-top: 50px;
+}
+.todo-list th {
+  padding: 5px;
+  text-align: left;
+  background-color: var(--bg-light-green);
+  color: var(--heading-color);
+}
+.todo-list td {
+  padding: 5px;
+  font-size: 15px;
+  background-color: #fff;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-list th:nth-child(1),
+.todo-list td:nth-child(1) {
+  width: 40%;
+}
+.todo-list .delete {
+  background: pink;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: red;
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid red;
+}
+
+.todo-list .delete:hover {
+  color: pink;
+  background-color: red;
+}
+
+.todo-list th:last-child,
+.todo-list td:last-child {
+  width: 1%;
+  white-space: nowrap;
+}
